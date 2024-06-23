@@ -1,0 +1,49 @@
+                                               	
+1--------------------------------------------------------------------------------------------------------------------
+- Performance optimization is crucial in React.
+- Unnecessary re-renders occur when child components render despite unchanged props or even if there are no props,
+causing performance issues.
+- This is particularly problematic when child components fetch data from APIs.
+---------------------------------------------------------------------------------------------------------------------
+                                             UseMemo vs. useCallback
+2--------------------------------------------------------------------------------------------------------------------
+- Use React.memo() to optimize component re-evaluation by memoizing components.
+- React.memo() caches props and compares them to previous props, reducing unnecessary re-renders.
+- Apply React.memo() to parent components to prevent unnecessary rendering of entire component branches.
+3--------------------------------------------------------------------------------------------------------------------
+- Use useMemo() to memoize objects, arrays, and functions with return value.
+- Syntax: useMemo(  function , dependency array )
+- When a dependency changes the memoized value is recomputed.
+4-------------------------------------------------------------------------------------------------------------------- 
+- Use useCallback() to memoize functions with no return value.
+- Syntax: useCallback(  function , dependency array )
+- When a dependency changes the memoized function will be recreated and stored.
+---------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2--------------------------------------------------------------------------------------------------------------------
+- React manages components, props, states, and logic.
+- React DOM renders UI based on state updates, utilizing virtual DOM.
+- Virtual DOM updates are selectively applied to the real DOM, improving efficiency.
+- Re-evaluation occurs each time a component's state changes, while re-rendering happens only when necessary.

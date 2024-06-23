@@ -1,0 +1,24 @@
+					useMemo vs. useCallback
+
+- Both are react hooks used to optimize the performance of apps.
+--------------------------------------------------------------------------------------------------------------------
+useMemo( () => {return} , [] )
+
+- Improves the performance by returning a memoized value.
+- When a dependency changes the memoized value is recomputed and restored.
+- Used to prevent unnecessary computations of values. 
+-------------------------------------------------------------------------------------------------------------------- 
+
+useCallback( () => {} , [] )
+
+- Improves the performance by returning a memoized function so that its reference remains 
+the same between evaluations unless the dependencies specified in the dependency array change.
+- This optimizes performance by preventing unnecessary re-evaluations of components that
+depend on it.
+- Used in helping to prevent child component from being re-evaluated when props are sent to it which 
+helps in performance evaluation by preventing reexecuting expensive operations like fetching 
+data from an API or if it has alot of other child compoenents itself that may be doing some 
+operations which are expensive.
+-------------------------------------------------------------------------------------------------------------------- 
+
+
