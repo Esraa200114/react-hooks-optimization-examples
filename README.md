@@ -1,2 +1,2 @@
 # react-hooks-optimization-examples
-Examples demonstrating optimization techniques using React hooks like useCallback and useMemo. Explore practical applications and benefits of these hooks in improving performance and efficiency within React functional components.
+Explore practical examples showcasing how to optimize React functional components using hooks such as useCallback and useMemo. Understand when and how to use these hooks effectively to improve performance by memoizing functions and expensive computations. Each example includes clear explanations and code snippets to illustrate their application in React development. Ideal for developers looking to enhance their understanding of performance optimization techniques in React applications.
